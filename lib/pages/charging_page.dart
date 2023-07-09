@@ -36,7 +36,6 @@ class ChargingPage extends StatelessWidget {
                 ),
                 Container(
                     padding: const EdgeInsets.all(12),
-                    height: 105,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
                         color: kPrimaryColor),
