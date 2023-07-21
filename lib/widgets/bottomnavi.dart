@@ -1,4 +1,5 @@
 import 'package:electrical_car_app/constants.dart';
+import 'package:electrical_car_app/pages/profile_page.dart';
 import 'package:electrical_car_app/pages/sarjgecmisi_page.dart';
 import 'package:electrical_car_app/pages/stations_page.dart';
 import 'package:flutter/material.dart';
@@ -126,7 +127,19 @@ class BottomNavi extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => const SarjGecmisi()),
               );
             }
-          } else {}
+          } else {
+            if (currentindex == 0) {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfilPage()),
+              );
+            } else {
+              Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(builder: (context) => const ProfilPage()),
+              );
+            }
+          }
         });
   }
 }
