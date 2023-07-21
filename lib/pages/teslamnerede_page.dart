@@ -97,7 +97,7 @@ class _TeslamNeredeState extends State<TeslamNerede> {
     List<LatLng> polylineCoordinates = [];
 
     PolylineResult result = await polylinePoints.getRouteBetweenCoordinates(
-      "AIzaSyDJ2tkBZyuCN98n4ImRXnFtGVgXVSRzgTA",
+      "",
       PointLatLng(_originLatitude, _originLongitude),
       PointLatLng(_destLatitude, _destLongitude),
       travelMode: TravelMode.driving,
