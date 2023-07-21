@@ -1,4 +1,5 @@
 import 'package:electrical_car_app/constants.dart';
+import 'package:electrical_car_app/pages/arackontrol_page.dart';
 import 'package:electrical_car_app/pages/charging_page.dart';
 import 'package:electrical_car_app/pages/teslamnerede_page.dart';
 import 'package:electrical_car_app/widgets/bottomnavi.dart';
@@ -243,59 +244,71 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                                       ),
                                       Column(
                                         children: [
-                                          Container(
-                                            width: (size.width -
-                                                    (3 * kDefaultPadding)) /
-                                                2,
-                                            height: 70,
-                                            decoration: BoxDecoration(
-                                                borderRadius:
-                                                    BorderRadius.circular(10),
-                                                color: kPrimaryColor),
-                                            child: Stack(
-                                              children: [
-                                                SizedBox(
-                                                  height: 130,
-                                                  width: (size.width -
-                                                          (3 *
-                                                              kDefaultPadding)) /
-                                                      2,
-                                                ),
-                                                const Positioned(
-                                                  top: 10,
-                                                  left: 10,
-                                                  child: Text(
-                                                    "Araç Kontrolü",
-                                                    style: TextStyle(
-                                                        fontSize: 20,
-                                                        color: kTextColor,
-                                                        fontFamily: "Larsseit",
-                                                        fontWeight:
-                                                            FontWeight.bold),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(
+                                                    builder: (context) =>
+                                                        const AracKontrolPage()),
+                                              );
+                                            },
+                                            child: Container(
+                                              width: (size.width -
+                                                      (3 * kDefaultPadding)) /
+                                                  2,
+                                              height: 70,
+                                              decoration: BoxDecoration(
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                  color: kPrimaryColor),
+                                              child: Stack(
+                                                children: [
+                                                  SizedBox(
+                                                    height: 130,
+                                                    width: (size.width -
+                                                            (3 *
+                                                                kDefaultPadding)) /
+                                                        2,
                                                   ),
-                                                ),
-                                                const Positioned(
-                                                  top: 30,
-                                                  left: 10,
-                                                  child: Text(
-                                                    "Tüm Kapılar Kilitli",
-                                                    style: TextStyle(
-                                                        fontSize: 13,
-                                                        color: kTextColor2,
-                                                        fontFamily: "Larsseit",
-                                                        fontWeight:
-                                                            FontWeight.bold),
+                                                  const Positioned(
+                                                    top: 10,
+                                                    left: 10,
+                                                    child: Text(
+                                                      "Araç Kontrolü",
+                                                      style: TextStyle(
+                                                          fontSize: 20,
+                                                          color: kTextColor,
+                                                          fontFamily:
+                                                              "Larsseit",
+                                                          fontWeight:
+                                                              FontWeight.bold),
+                                                    ),
                                                   ),
-                                                ),
-                                                const Positioned(
-                                                    bottom: 7,
-                                                    right: 10,
-                                                    child: Icon(
-                                                      Icons.lock,
-                                                      size: 25,
-                                                      color: Colors.red,
-                                                    )),
-                                              ],
+                                                  const Positioned(
+                                                    top: 30,
+                                                    left: 10,
+                                                    child: Text(
+                                                      "Tüm Kapılar Kilitli",
+                                                      style: TextStyle(
+                                                          fontSize: 13,
+                                                          color: kTextColor2,
+                                                          fontFamily:
+                                                              "Larsseit",
+                                                          fontWeight:
+                                                              FontWeight.bold),
+                                                    ),
+                                                  ),
+                                                  const Positioned(
+                                                      bottom: 7,
+                                                      right: 10,
+                                                      child: Icon(
+                                                        Icons.lock,
+                                                        size: 25,
+                                                        color: Colors.red,
+                                                      )),
+                                                ],
+                                              ),
                                             ),
                                           ),
                                           const SizedBox(

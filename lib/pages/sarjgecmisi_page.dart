@@ -8,7 +8,7 @@ class SarjGecmisi extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Text text = Text("");
+    Text text = const Text("");
     return Scaffold(
         backgroundColor: kBackgroundColor,
         extendBodyBehindAppBar: true,
