@@ -255,7 +255,7 @@ class _HavalandirmaPageState extends State<HavalandirmaPage> {
                                 ),
                                 Positioned(
                                   top: 50,
-                                  left: klima == false ? 9 : 15,
+                                  left: klima == false ? 12 : 17,
                                   child: Text(
                                     klima == false ? "Kapalı" : "Açık",
                                     style: const TextStyle(
@@ -315,7 +315,7 @@ class _HavalandirmaPageState extends State<HavalandirmaPage> {
                                   height: 65,
                                 ),
                                 Positioned(
-                                  left: 5,
+                                  left: 13,
                                   bottom: 10,
                                   child: AvatarGlow(
                                     endRadius: 30,

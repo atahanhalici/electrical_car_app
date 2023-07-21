@@ -1,5 +1,5 @@
 import 'package:electrical_car_app/constants.dart';
-import 'package:electrical_car_app/pages/addcard_pade.dart';
+import 'package:electrical_car_app/pages/addcard_page.dart';
 import 'package:electrical_car_app/widgets/bottomnavi.dart';
 import 'package:flutter/material.dart';
 

@@ -1,4 +1,5 @@
 import 'package:electrical_car_app/pages/homepage.dart';
+import 'package:electrical_car_app/pages/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const HomePage(),
+      home: const SplashScreen(),
     );
   }
 }
